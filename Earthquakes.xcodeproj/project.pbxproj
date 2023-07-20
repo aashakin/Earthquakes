@@ -10,6 +10,7 @@
 		1F8956402A6909C4003C2E16 /* QuakeError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F89563F2A6909C4003C2E16 /* QuakeError.swift */; };
 		1F8956482A690BB0003C2E16 /* EarthquakesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8956472A690BB0003C2E16 /* EarthquakesTests.swift */; };
 		1F89564F2A690BED003C2E16 /* TestData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F89564E2A690BED003C2E16 /* TestData.swift */; };
+		1F8956522A6910DA003C2E16 /* GeoJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8956502A691073003C2E16 /* GeoJSON.swift */; };
 		7CC62565273C2A9200F87758 /* Quake+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC62564273C2A9200F87758 /* Quake+Color.swift */; };
 		AA2F4EB4276BACEC009837CD /* QuakeMagnitude.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2F4EB3276BACEC009837CD /* QuakeMagnitude.swift */; };
 		AA988DD327E900B6004EA073 /* Quakes+Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA988DD227E900B6004EA073 /* Quakes+Toolbar.swift */; };
@@ -41,6 +42,7 @@
 		1F8956452A690BB0003C2E16 /* EarthquakesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EarthquakesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F8956472A690BB0003C2E16 /* EarthquakesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EarthquakesTests.swift; sourceTree = "<group>"; };
 		1F89564E2A690BED003C2E16 /* TestData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestData.swift; sourceTree = "<group>"; };
+		1F8956502A691073003C2E16 /* GeoJSON.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeoJSON.swift; sourceTree = "<group>"; };
 		20E8E62C4A6D78D282B06BA8 /* ACKNOWLEDGEMENTS.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = ACKNOWLEDGEMENTS.txt; sourceTree = "<group>"; };
 		54CF5BED3CD9DE525986B01C /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		6EC8C05DC1E92B40CD3EBA87 /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				AD43F1F826158CD50068AABC /* Quake.swift */,
 				7CC62564273C2A9200F87758 /* Quake+Color.swift */,
 				1F89563F2A6909C4003C2E16 /* QuakeError.swift */,
+				1F8956502A691073003C2E16 /* GeoJSON.swift */,
 			);
 			name = Models;
 			path = Earthquakes/Models;
@@ -299,6 +302,7 @@
 				AA2F4EB4276BACEC009837CD /* QuakeMagnitude.swift in Sources */,
 				AA988DD727E90189004EA073 /* EditButton.swift in Sources */,
 				AA988DD527E9016A004EA073 /* SelectButton.swift in Sources */,
+				1F8956522A6910DA003C2E16 /* GeoJSON.swift in Sources */,
 				ADDDB1812625242200241A73 /* QuakeRow.swift in Sources */,
 				7CC62565273C2A9200F87758 /* Quake+Color.swift in Sources */,
 				AD43F1E626158A640068AABC /* EarthquakesApp.swift in Sources */,
