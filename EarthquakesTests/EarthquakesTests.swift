@@ -45,4 +45,12 @@ final class EarthquakesTests: XCTestCase {
         XCTAssertEqual(decodedLocation.latitude, 19.2189998626709, accuracy: 0.00000000001)
         XCTAssertEqual(decodedLocation.longitude, -155.434173583984, accuracy: 0.00000000001)
     }
+    
+    func test_quakeClient_doesFetch_earthquakeData() async throws {
+        let downloader = TestDownloader()
+        let quakeClient = QuakeClient(downloader: downloader)
+        let quakes = try await quakeClient.quakes
+        
+        XCTAssertEqual(quakes.count, 6)
+    }
 }
