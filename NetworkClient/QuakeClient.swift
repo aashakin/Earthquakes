@@ -8,7 +8,7 @@
 
 import Foundation
 
-class QuakeClient {
+actor QuakeClient {
     private static let urlString = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson"
     
     private let cache: NSCache<NSString, CacheEntryObject> = NSCache()
@@ -33,5 +33,33 @@ class QuakeClient {
     
     init(downloader: any HTTPDataDownloader = URLSession.shared) {
         self.downloader = downloader
+    }
+    
+    func quakeLoaction(from url: URL) async throws -> QuakeLocation {
+        if let cached = cache[url] {
+            switch cached {
+            case .ready(let location):
+                return location
+            case .inProgress(let task):
+                return try await task.value
+            }
+        }
+        
+        let task = Task<QuakeLocation, Error> {
+            let data = try await downloader.httpData(from: url)
+            let location = try decoder.decode(QuakeLocation.self, from: data)
+            return location
+        }
+        
+        cache[url] = .inProgress(task)
+        
+        do {
+            let location = try await task.value
+            cache[url] = .ready(location)
+            return location
+        } catch {
+            cache[url] = nil
+            throw error
+        }
     }
 }
