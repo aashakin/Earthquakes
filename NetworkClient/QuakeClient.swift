@@ -11,6 +11,8 @@ import Foundation
 class QuakeClient {
     private static let urlString = "https://earthquake.usgs.gov/earthquakes/feed/v1.0/summary/all_day.geojson"
     
+    private let cache: NSCache<NSString, CacheEntryObject> = NSCache()
+    
     private let feedURL = URL(string: urlString)!
     
     private lazy var decoder: JSONDecoder = {
