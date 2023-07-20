@@ -37,4 +37,12 @@ final class EarthquakesTests: XCTestCase {
         
         XCTAssertEqual(decodedSeconds, expectedSeconds, accuracy: 0.00001)
     }
+    
+    func test_quakeLocationDecoder_decodes_quakeLocation() throws {
+        let decoder = JSONDecoder()
+        let decodedLocation = try decoder.decode(QuakeLocation.self, from: testDetail_hv72783692)
+        
+        XCTAssertEqual(decodedLocation.latitude, 19.2189998626709, accuracy: 0.00000000001)
+        XCTAssertEqual(decodedLocation.longitude, -155.434173583984, accuracy: 0.00000000001)
+    }
 }
