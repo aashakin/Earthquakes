@@ -33,7 +33,7 @@ actor QuakeClient {
                 try await withThrowingTaskGroup(of: (Int, QuakeLocation).self) { group in
                     for index in indexRange {
                         group.addTask {
-                            let location = try await self.quakeLoaction(from: geoJSON.quakes[index].detail)
+                            let location = try await self.quakeLocation(from: geoJSON.quakes[index].detail)
                             return (index, location)
                         }
                     }
@@ -56,7 +56,7 @@ actor QuakeClient {
         self.downloader = downloader
     }
     
-    func quakeLoaction(from url: URL) async throws -> QuakeLocation {
+    func quakeLocation(from url: URL) async throws -> QuakeLocation {
         if let cached = cache[url] {
             switch cached {
             case .ready(let location):
