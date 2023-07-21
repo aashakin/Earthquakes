@@ -18,6 +18,8 @@
 		1F8956602A694916003C2E16 /* QuakesProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F89565F2A694916003C2E16 /* QuakesProvider.swift */; };
 		1F8956632A69584C003C2E16 /* CacheEntryObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8956622A69584C003C2E16 /* CacheEntryObject.swift */; };
 		1F8956652A6958F4003C2E16 /* NSCache+Subscript.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8956642A6958F4003C2E16 /* NSCache+Subscript.swift */; };
+		1F8956672A6A4F87003C2E16 /* Quake+Preview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8956662A6A4F87003C2E16 /* Quake+Preview.swift */; };
+		1F8956692A6A4FE6003C2E16 /* QuakeDetail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1F8956682A6A4FE6003C2E16 /* QuakeDetail.swift */; };
 		7CC62565273C2A9200F87758 /* Quake+Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CC62564273C2A9200F87758 /* Quake+Color.swift */; };
 		AA2F4EB4276BACEC009837CD /* QuakeMagnitude.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA2F4EB3276BACEC009837CD /* QuakeMagnitude.swift */; };
 		AA988DD327E900B6004EA073 /* Quakes+Toolbar.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA988DD227E900B6004EA073 /* Quakes+Toolbar.swift */; };
@@ -57,6 +59,8 @@
 		1F89565F2A694916003C2E16 /* QuakesProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakesProvider.swift; sourceTree = "<group>"; };
 		1F8956622A69584C003C2E16 /* CacheEntryObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheEntryObject.swift; sourceTree = "<group>"; };
 		1F8956642A6958F4003C2E16 /* NSCache+Subscript.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSCache+Subscript.swift"; sourceTree = "<group>"; };
+		1F8956662A6A4F87003C2E16 /* Quake+Preview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Quake+Preview.swift"; sourceTree = "<group>"; };
+		1F8956682A6A4FE6003C2E16 /* QuakeDetail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuakeDetail.swift; sourceTree = "<group>"; };
 		20E8E62C4A6D78D282B06BA8 /* ACKNOWLEDGEMENTS.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = ACKNOWLEDGEMENTS.txt; sourceTree = "<group>"; };
 		54CF5BED3CD9DE525986B01C /* LICENSE.txt */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
 		6EC8C05DC1E92B40CD3EBA87 /* SampleCode.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; name = SampleCode.xcconfig; path = Configuration/SampleCode.xcconfig; sourceTree = "<group>"; };
@@ -186,6 +190,7 @@
 				AD43F1EC26158A660068AABC /* Preview Assets.xcassets */,
 				1F89564E2A690BED003C2E16 /* TestData.swift */,
 				1F89565C2A692E3C003C2E16 /* TestDownloader.swift */,
+				1F8956662A6A4F87003C2E16 /* Quake+Preview.swift */,
 			);
 			name = "Preview Content";
 			path = "Earthquakes/Preview Content";
@@ -211,6 +216,7 @@
 				AD57B10126561FE1005183D0 /* Quakes.swift */,
 				ADDDB1802625242200241A73 /* QuakeRow.swift */,
 				AA2F4EB3276BACEC009837CD /* QuakeMagnitude.swift */,
+				1F8956682A6A4FE6003C2E16 /* QuakeDetail.swift */,
 				AA988DD127E9007E004EA073 /* ToolbarContent */,
 			);
 			name = Views;
@@ -350,12 +356,14 @@
 				AA988DDD27E9030A004EA073 /* DeleteButton.swift in Sources */,
 				1F8956402A6909C4003C2E16 /* QuakeError.swift in Sources */,
 				1F8956542A6919E6003C2E16 /* QuakeLocation.swift in Sources */,
+				1F8956672A6A4F87003C2E16 /* Quake+Preview.swift in Sources */,
 				1F8956572A6929A0003C2E16 /* HTTPDataDownloader.swift in Sources */,
 				AA988DD927E901B0004EA073 /* RefreshButton.swift in Sources */,
 				1F8956592A692BAE003C2E16 /* QuakeClient.swift in Sources */,
 				AD57B10226561FE1005183D0 /* Quakes.swift in Sources */,
 				1F89565D2A692E3C003C2E16 /* TestDownloader.swift in Sources */,
 				AD43F1FA26158CD50068AABC /* Quake.swift in Sources */,
+				1F8956692A6A4FE6003C2E16 /* QuakeDetail.swift in Sources */,
 				1F8956652A6958F4003C2E16 /* NSCache+Subscript.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
